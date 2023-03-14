@@ -57,7 +57,7 @@ header h1{
     flex-direction: row;
     align-items: center;
     height: 50vw;
-    background-image: url('images/scattered-forcefields (1).svg');
+    background-image: url('./images/scattered-forcefields (1).svg');
 }
 
 #texto h2{
