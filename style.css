@@ -270,7 +270,7 @@ footer{
     header{
         flex-direction: row;
         align-items: center;
-        position: fixed;
+        position: relative;
         padding: 10px 0px;
         justify-content: center;
         gap: 10px;
@@ -298,12 +298,12 @@ footer{
         height: 100%;
         margin-bottom: 20px;
         background-image: none;
-        padding: 10vh 5vw;
+        padding: 8vh 5vw;
     }
 
     #imagem-principal > img{
         margin-left: 0;
-        width: 25vh;
+        width: 35vh;
     }
 
     #texto{
