@@ -6,7 +6,6 @@
 body{   
     background-color: black;
     color: white;
-    ffont-family: 'Noto Sans', sans-serif;
 }
 
 header{
@@ -296,6 +295,7 @@ footer{
         flex-direction: column;   
         height: 100%;
         margin-bottom: 20px;
+        background-image: none;
     }
 
     #imagem-principal > img{
