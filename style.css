@@ -54,8 +54,9 @@ header h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 50vw;
+    height: 40vw;
     background-image: url(./images/scattered-forcefields.svg);
+    padding-top: 5vh;
 }
 
 
@@ -127,6 +128,9 @@ header h1{
 
 #sobre{
     background-color: #0fbbda;
+    background-image: url(./images/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -135,19 +139,20 @@ header h1{
 }
 
 #sobre img{
-    width: 70vh;
+    width: 90vh;
 }
 
 #sobre h2{
     font-size: 5vh;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2vh;
 }
 
 #sobre p{
     font-size: 3vh;
     text-align: justify;
     font-weight: 600;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #escrita{
@@ -176,50 +181,43 @@ header h1{
     text-align: center;
 }
 
-
-.card{
+#projeto-1{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(20, 20, 20);
-    padding: 5vw 10vh;
-    border-radius: 20px;
-    box-shadow: -05px 10px #0fbbda;
-    margin-bottom: 40px;
+    margin-bottom: 2vh;
+    padding: 0vh 5vw;
+    margin-bottom: 15vh;
 }
 
-#projetos a> img{
-    width: 50vh;
-    margin-right: 80px;
-    margin-left: 20px;
-    -webkit-transform: scale(1);
-	transform: scale(1);
-    opacity: .8;
-    -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    border-radius: 15px;
+#projeto-2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2vh;
+    padding: 0vh 5vw;
+    margin-top: 15vh;
 }
 
-#projetos a> img:hover{
-    cursor: pointer;
-    opacity: .5;
-    -webkit-transform: scale(1);
-	transform: scale(1);   
+#projeto1-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: start;
+    padding: 0px 5vw;
 }
 
-.texto-card > p{
-    font-size: 20px;
-    text-align: center;
-    margin: 1vw 2vh;
+#projeto2-direita{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: end;
+    padding: 0px 5vw;
+}
+
+#projetos h3{
+    font-size: 5vh;
+    text-transform: uppercase;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.texto-card> h2{
-    text-align: center;
-    font-size: 35px;
-    margin: 0px 0px 0px 0px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 2vh;
 }
 
 
@@ -227,10 +225,43 @@ header h1{
     font-size: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-bottom: 5vh;
+    margin-top: 2vh;
+    text-transform: uppercase;
+}
+
+#projetos p{
+    font-size: 3vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600px;
+    margin-bottom: 2vh;
+
+}
+
+
+#projetos button{
+    transition: 0.5s;
+    background-color: #0fbbda;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#projetos button:hover{
+    background-color: rgb(13, 152, 177);
+    cursor: pointer;    
+    transition: 0.5s;
+    transform: scale(1.1);
+       
 }
 
 #meu-contato{
-    height: 20vw;
+    height: 30vw;
     background-color: #0fbbda;
     margin-top: 100px;
     display: flex;
@@ -243,20 +274,25 @@ header h1{
 #meu-contato h2{
     font-size: 5vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 800;
-    color: black;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;  
 }
 
 #meu-contato h3{
-    font-size: 4vh;
+    font-size: 3vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 800;
-    color: black;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5vh;
+    
 }
 
 #meu-contato img{
-    width: 50vh;
-    padding-right: 120px;
+    width: 5vh;
+    margin-right: 2vw;
 }
 
 footer{
@@ -324,7 +360,7 @@ footer{
     }
 
     .logo-contatos{
-        width: 40px;
+        width: 5vh;
         padding: 0px 0px;
         transform: scale(0.8);
         transition: 0.5s;
@@ -376,27 +412,52 @@ footer{
         height: 100%;
         margin: 0px 0px;
         padding: 0px 0px;
+        align-items: center;
     }
 
-    .card{
+    #projetos img{
+        width: 10vh;
+        margin: 20vh 0vw;
+    }
+
+    #projeto-1 img{  
+        width: 35vh;
+        margin: 0;
+    }
+
+    #projeto-2 img{  
+        width: 35vh;
+        margin: 0;
+    }
+    #projeto-1{
+        margin: 5vh 0vw;
+        display: flex;
+        flex-direction: column;       
+    }
+
+    #projeto-2{
+        display: flex;
         flex-direction: column;
-        padding: 10vw 5vh;
-        margin: 0px 20px;
-        margin: 20px;
+        margin: 5vh 0vw;
     }
 
-    .card p{
-        margin: 0px 0px;
+    #projeto1-esquerda{
+        display: flex;
+        align-items: center;
         text-align: center;
-        font-size: 18px;
-        font-weight: 300;
     }
 
-    
+    #projeto2-direita{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
     #projeto-1 h2{
         font-size: 26px;
         margin: 10px 0px;
     }
+
     
     #projeto-2 h2{
         font-size: 26px;
@@ -422,6 +483,7 @@ footer{
 
     #meu-contato{
         flex-direction: column;
+        align-items: center;
         padding: 10vh 0vw;
         height: 100%;
     }
@@ -437,7 +499,7 @@ footer{
     }
 
     #meu-contato img{
-        width: 30vh;
+        width: 5vh;
         padding: 0px 0px;
         
     }
